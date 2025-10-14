@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSphere Academy | Immersive Tech Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container"></div>
+    <div class="noise-overlay"></div>
+    
+    <div id="ui-overlay">
+        <!-- 3D Header -->
+        <header>
+            <div class="logo">
+                <div class="logo-orb">⚡</div>
+                <div class="logo-text">CodeSphere Academy</div>
+            </div>
+            
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Courses</a>
+                <a href="#" class="nav-link">Paths</a>
+                
+               
+            </div>
+            
+            <div class="user-stats">
+                <div class="stat">
+                    <div class="stat-value">85%</div>
+                    <div class="stat-label">Progress</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Achievements</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1 class="scene-title">Choose Your Learning Journey</h1>
+            <p class="scene-subtitle">Immerse yourself in our interactive 3D learning environment. Rotate through courses and select your path to tech mastery.</p>
+            
+            <div class="carousel-container">
+                <div class="carousel" id="course-carousel">
+                    <!-- Course cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="navigation-controls">
+                <div class="nav-button" id="prev-course">←</div>
+                <div class="nav-button" id="next-course">→</div>
+            </div>
+            
+            <div class="navigation-hint">
+                <div class="nav-key">
+                    <div class="key-icon">←</div>
+                    <span>Previous Course</span>
+                </div>
+                <div class="nav-key">
+                    <div class="key-icon">→</div>
+                    <span>Next Course</span>
+                </div>
+                <div class="nav-key">
+                    <div class="key-icon">SPACE</div>
+                    <span>Select Course</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 3D Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-heading">CodeSphere Academy</h3>
+                    <p>Transforming tech education through immersive, game-based learning experiences.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <span>dylandavid223@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <span>+254 790 998 480</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <span>Digital Learning Campus</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">All Courses</a></li>
+                        <li><a href="#">Learning Paths</a></li>
+                        <li><a href="#">Mentorship Program</a></li>
+                        <li><a href="#">Student Projects</a></li>
+                        <li><a href="#">Career Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-heading">Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 CodeSphere Academy. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Achievement Notification -->
+    <div class="achievement-notification" id="achievement-notification">
+        <div class="achievement-icon">★</div>
+        <div class="achievement-content">
+            <div class="achievement-title">Achievement Unlocked!</div>
+            <div id="achievement-text">First Course Selected</div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/three-scene.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
